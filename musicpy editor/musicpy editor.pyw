@@ -81,7 +81,7 @@ def direct_play(filename):
 
 def set_font(font, dpi):
     if dpi != 96.0:
-        font.setPointSize(font.pointSize() * (96.0 / dpi))
+        font.setPointSize(font.pointSize() * (int(96.0 / dpi))
     return font
 
 
